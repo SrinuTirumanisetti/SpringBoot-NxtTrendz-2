@@ -1,0 +1,6 @@
+2025-08-26 05:02:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE if not exists Category ( id INTEGER PRIMARY KEY [*]AUTOINCREMENT, name TEXT NOT NULL, description TEXT )"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE if not exists Category ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, description TEXT ) [42001-214]
+2025-08-26 05:05:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE if not exists Category ( id INTEGER PRIMARY KEY [*]AUTOINCREMENT, name TEXT NOT NULL, description TEXT )"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE if not exists Category ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, description TEXT ) [42001-214]
