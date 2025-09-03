@@ -1,9 +1,12 @@
-/*
- *
- * You can use the following import statements
- * 
- * import java.util.ArrayList;
- * 
- */
+package com.example.nxttrendz2.repository;
 
-// Write your code here
+import com.example.nxttrendz2.model.Product;
+import java.util.ArrayList;
+
+public interface ProductRepository {
+    ArrayList<Product> getAllProducts();
+    Product createProduct(Product product);
+    Product getProductById(int productId);
+    Product updateProduct(int productId, Product product);
+    void deleteProduct(int productId);
+}

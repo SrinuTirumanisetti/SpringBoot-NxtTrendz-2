@@ -16,19 +16,16 @@ public class CategoryController {
     @Autowired
     private CategoryJpaService categoryService;
 
-    // API 1: GET /categories
     @GetMapping
     public List<Category> getAllCategories() {
         return categoryService.getAllCategories();
     }
 
-    // API 2: POST /categories
     @PostMapping
     public Category createCategory(@RequestBody Category category) {
         return categoryService.createCategory(category);
     }
 
-    // API 3: GET /categories/{categoryId}
     @GetMapping("/{categoryId}")
     public Category getCategoryById(@PathVariable int categoryId) {
         try {
@@ -38,7 +35,6 @@ public class CategoryController {
         }
     }
 
-    // API 4: PUT /categories/{categoryId}
     @PutMapping("/{categoryId}")
     public Category updateCategory(@PathVariable int categoryId, @RequestBody Category category) {
         try {
@@ -48,7 +44,6 @@ public class CategoryController {
         }
     }
 
-    // API 5: DELETE /categories/{categoryId}
     @DeleteMapping("/{categoryId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCategory(@PathVariable int categoryId) {
